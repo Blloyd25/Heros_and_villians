@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from supers import views
+from super_types import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.super_type_list),
+    path('<int:pk>/', views.super_types_detail),
+  
 ]

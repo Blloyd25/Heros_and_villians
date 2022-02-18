@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-from heroes_villians_project.super_types.serializer import Super_Types_Serializer
+from .serializer import Super_Types_Serializer
 from .models import Super_Types
 from super_types import serializer
 
